@@ -165,8 +165,8 @@ var menuLockedArea = null;
 const ACCENT_CHAR_MENU_TIMEOUT = 700;
 
 // Backspace repeat delay and repeat rate
-const REPEAT_RATE = 100;
-const REPEAT_TIMEOUT = 700;
+const REPEAT_RATE = 50;
+const REPEAT_TIMEOUT = 350;
 
 // How long to wait for more focuschange events before processing
 const FOCUS_CHANGE_DELAY = 20;
