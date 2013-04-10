@@ -121,6 +121,7 @@ button::-moz-focus-inner {
   height: 4.3rem;
 }
 
+/*
 .keyboard-key:not(.special-key).highlighted > .visual-wrapper:after {
   content: "";
   position: absolute;
@@ -144,6 +145,7 @@ button::-moz-focus-inner {
   background: #6ec5d5;
   z-index: 1;
 } 
+*/
 
 .keyboard-key:not(.special-key).highlighted > .visual-wrapper > span {
   font: 3.8rem/4.5rem MozTT, Sans-serif;
@@ -157,6 +159,7 @@ button::-moz-focus-inner {
   right: -0.8rem;
 }
 
+/*
 .keyboard-key:not(.special-key).highlighted > .visual-wrapper > span:after {
   content: "";
   position: absolute;
@@ -170,6 +173,7 @@ button::-moz-focus-inner {
 .keyboard-key:not(.special-key).highlighted:last-child > .visual-wrapper > span:after {
   right: -0.2rem;
 }
+*/
 
 .keyboard-key:not(.special-key).highlighted:last-child  > .visual-wrapper > span {
   right: -1px;
@@ -214,6 +218,7 @@ button::-moz-focus-inner {
   background: none;
   color: #1e4a52;
  }
+/*
 .keyboard-key.special-key.highlighted > .visual-wrapper:before {
   content: "";
   position: absolute;
@@ -224,6 +229,7 @@ button::-moz-focus-inner {
   z-index: -1;
   background: #4495A8;
 }
+*/
 
 /* Spacebar exceptions */
 .keyboard-key.highlighted[data-keycode="32"] > .visual-wrapper {
@@ -231,6 +237,7 @@ button::-moz-focus-inner {
   border: solid 1px #3f5459;
   height: 4rem;
 }
+/*
 .keyboard-key.highlighted[data-keycode="32"] > .visual-wrapper:after {
   content: "";
   position: absolute;
@@ -241,6 +248,7 @@ button::-moz-focus-inner {
   z-index: -1;
   background: #4495A8;
 }
+*/
 .keyboard-key.highlighted[data-keycode="32"] > .visual-wrapper:before,
 .keyboard-key.highlighted[data-keycode="32"] > .visual-wrapper > span,
 .keyboard-key.highlighted[data-keycode="32"] > .visual-wrapper > span:after {
@@ -269,12 +277,14 @@ button::-moz-focus-inner {
   border-top: none;
   height: 4.5rem;
 }
+/*
 .keyboard-key.highlighted.kbr-menu-on > .visual-wrapper > span:after {
   display: none;
 }
 .keyboard-key.highlighted.kbr-menu-on  > .visual-wrapper:before {
   background: #6EC5D5;
 }
+*/
 .keyboard-key.highlighted.kbr-menu-on > .visual-wrapper > span {
   background: transparent;
   border-color: transparent;
@@ -353,11 +363,13 @@ and displays the list of alternatives. */
   background: none;
 }
 
+/*
 #keyboard-accent-char-menu .keyboard-key.highlighted > .visual-wrapper:after, 
 #keyboard-accent-char-menu .keyboard-key.highlighted > .visual-wrapper:before,
 #keyboard-accent-char-menu .keyboard-key.highlighted > .visual-wrapper > span:after {
   display: none;
 }
+*/
 
 /* Styles for keys in accent menu (not highlighted). */
 #keyboard-accent-char-menu .keyboard-key > .visual-wrapper > span {
@@ -416,6 +428,7 @@ bubble above the key when you tap and hold. */
   border: none;
 }
 
+/*
 .keyboard-key.special-key.highlighted.kbr-menu-on > .visual-wrapper:after {
   content: "";
   position: absolute;
@@ -435,6 +448,7 @@ bubble above the key when you tap and hold. */
   height: 0.5rem;
   z-index: 1;
 } 
+*/
 
 #keyboard-accent-char-menu.kbr-menu-lang > .keyboard-key {
   padding: 0;
