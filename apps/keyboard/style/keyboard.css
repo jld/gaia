@@ -96,10 +96,6 @@ button::-moz-focus-inner {
     bottom - begin  | bottom - end
   */
   background: 
-    url(images/key-radius-tb.png) no-repeat left top,
-    url(images/key-radius-te.png) no-repeat right top,
-    url(images/key-radius-bb.png) no-repeat left bottom,
-    url(images/key-radius-be.png) no-repeat right bottom,
     url(images/key-light.png) repeat-x left 1px;
   position: absolute;
   top: -1px;
@@ -119,7 +115,6 @@ button::-moz-focus-inner {
 }
 .keyboard-key:not(.special-key).highlighted > .visual-wrapper {
   background: #6ec5d5;
-  border-radius: 0 0  0.3rem 0.3rem;
   border: solid 1px #8BD1DD;
   border-top: none;
   margin: -0.5rem 0 0;
@@ -135,11 +130,9 @@ button::-moz-focus-inner {
   right: -0.5rem;
   z-index: -1;
   background: url(images/dark-alpha.png) repeat left top;
-  border-radius: 0.6rem;
 }
 .keyboard-key:not(.special-key).highlighted:last-child > .visual-wrapper:after {
   right: -0.2rem;
-  border-radius: 0.6rem 0 0 0.6rem; 
 }
 .keyboard-key:not(.special-key).highlighted > .visual-wrapper:before {
   content: "";
@@ -158,7 +151,6 @@ button::-moz-focus-inner {
   background: #6ec5d5;
   color: #1a3f46;
   border: solid 1px #8BD1DD;
-  border-radius: 0.3rem;
   height: 5.2rem;
   top: -5.3rem;
   left: -0.8rem;
@@ -174,16 +166,13 @@ button::-moz-focus-inner {
   right: -0.5rem;
   z-index: -1;
   background: url(images/dark-alpha.png) repeat left top;
-  border-radius: 0.6rem;
 }
 .keyboard-key:not(.special-key).highlighted:last-child > .visual-wrapper > span:after {
   right: -0.2rem;
-  border-radius: 0.6rem 0 0 0.6rem;
 }
 
 .keyboard-key:not(.special-key).highlighted:last-child  > .visual-wrapper > span {
   right: -1px;
-  border-bottom-right-radius: 0;
 }
 .keyboard-key:not(.special-key).highlighted:last-child  #keyboard-accent-char-menu {
   right: -1px;
@@ -192,7 +181,6 @@ button::-moz-focus-inner {
 
 .keyboard-key:not(.special-key).highlighted:first-child  > .visual-wrapper > span {
   left: -1px;
-  border-bottom-left-radius: 0;
 }
 .keyboard-key:not(.special-key).highlighted:first-child  #keyboard-accent-char-menu {
   left: -1px;
@@ -210,10 +198,6 @@ button::-moz-focus-inner {
     bottom - begin  | bottom - end
   */
   background:
-    url(images/key-radius-special-tb.png) no-repeat left top,
-    url(images/key-radius-special-te.png) no-repeat right top,
-    url(images/key-radius-special-bb.png) no-repeat left bottom,
-    url(images/key-radius-special-be.png) no-repeat right bottom,
     url(images/key-light-special.png) repeat-x left 1px;
   font-size: 1.5rem;
   line-height: 4rem;
@@ -224,7 +208,6 @@ button::-moz-focus-inner {
 /* Highlight for special keys */
 .keyboard-key.special-key.highlighted > .visual-wrapper {
   background: #4AB6CB;
-  border-radius: 0.3rem;
   border: solid 1px #3f5459;
 }
 .keyboard-key.special-key.highlighted > .visual-wrapper > span {
@@ -240,13 +223,11 @@ button::-moz-focus-inner {
   bottom: -0.25rem;
   z-index: -1;
   background: #4495A8;
-  border-radius: 0.3rem;
 }
 
 /* Spacebar exceptions */
 .keyboard-key.highlighted[data-keycode="32"] > .visual-wrapper {
   background: #4AB6CB;
-  border-radius: 0.3rem;
   border: solid 1px #3f5459;
   height: 4rem;
 }
@@ -259,7 +240,6 @@ button::-moz-focus-inner {
   bottom: -0.25rem;
   z-index: -1;
   background: #4495A8;
-  border-radius: 0.3rem;
 }
 .keyboard-key.highlighted[data-keycode="32"] > .visual-wrapper:before,
 .keyboard-key.highlighted[data-keycode="32"] > .visual-wrapper > span,
@@ -275,7 +255,6 @@ button::-moz-focus-inner {
 /* Hold */
 .keyboard-key.kbr-key-hold> .visual-wrapper {
   background: #4AB6CB;
-  border-radius: 0.3rem;
   border: solid 1px #3f5459;
 }
 .keyboard-key.kbr-key-hold> .visual-wrapper > span {
@@ -310,7 +289,6 @@ and displays the list of alternatives. */
   left: 0.6rem;
   margin-bottom: -1px;
   height: 5.8rem;
-  border-radius: 0.3rem;
   background: #333;
   border: 1px solid #000;
   white-space: nowrap;
@@ -326,13 +304,10 @@ and displays the list of alternatives. */
   right: -0.5rem;
   z-index: -1;
   background: url(images/dark-alpha.png) repeat left top;
-  border-radius: 0.6rem 0.6rem 0.6rem 0;
 }
 .keyboard-key:first-child #keyboard-accent-char-menu {
-  border-radius: 0.3rem 0.3rem 0.3rem 0;
 }
 .keyboard-key:last-child #keyboard-accent-char-menu {
-  border-radius: 0.3rem 0.3rem 0 0.3rem;
 }
 
 #keyboard-accent-char-menu.show {
@@ -370,7 +345,6 @@ and displays the list of alternatives. */
 #keyboard-accent-char-menu .keyboard-key > .visual-wrapper {
   background: none;
   border: none;
-  border-radius: 0;
   margin: 0;
   height: 5.8rem;
 }
@@ -434,7 +408,6 @@ bubble above the key when you tap and hold. */
   z-index: 100;
 }
 .keyboard-key.special-key.highlighted.kbr-menu-on > .visual-wrapper {
-  border-radius: 0 0 0.3rem 0.3rem;
   margin-top: -0.5rem;
 }
 .keyboard-key.special-key.highlighted.kbr-menu-on > .visual-wrapper > span {
@@ -452,7 +425,6 @@ bubble above the key when you tap and hold. */
   right: -0.5rem;
   z-index: -1;
   background: url(images/dark-alpha.png) repeat left top;
-  border-radius: 0.6rem;
 }
 .keyboard-key.special-key.highlighted.kbr-menu-on > .visual-wrapper:before {
   content: "";
@@ -479,7 +451,6 @@ bubble above the key when you tap and hold. */
   height: 4rem;
 }
 #keyboard-accent-char-menu.kbr-menu-lang > .keyboard-key:first-child > .visual-wrapper {
-  border-radius: 0.3rem 0.3rem 0 0;
 }
 
 #keyboard-accent-char-menu.kbr-menu-lang > .keyboard-key.highlighted > .visual-wrapper {
@@ -519,7 +490,6 @@ bubble above the key when you tap and hold. */
   padding: 0 8px;
   background: rgba(245, 245, 245, 0.7);
   color: rgb(36, 36, 36);
-  border-top-right-radius: 8px;
   border-top: 1px solid #d5d5d5;
   border-right: 1px solid #d5d5d5;
   white-space: nowrap;
@@ -609,7 +579,6 @@ bubble above the key when you tap and hold. */
   line-height: 24px;
   height: 24px;
   border: none;
-  border-radius: 4px;
   margin: 3px;
 }
 
