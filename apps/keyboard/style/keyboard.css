@@ -84,7 +84,7 @@ button::-moz-focus-inner {
   -moz-box-sizing: border-box;
   position: relative;
   border: solid 1px #000;
-  background: #252220 url(images/key-bg.png) no-repeat center bottom;
+  background: #252220 no-repeat center bottom;
   background-size: 100% 100%;
 }
 
