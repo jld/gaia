@@ -422,6 +422,10 @@ var WindowManager = (function() {
                                          frame.clientHeight);
       request.onsuccess = function(e) {
         if (e.target.result) {
+          if (screenshots[origin]) {
+            console.log("Revoking old screenshot " + screenshots[origin]);
+            URL.revokeObjectURL(screenshots[origin]);
+          }
           screenshots[origin] = URL.createObjectURL(e.target.result);
         }
 
